@@ -11,7 +11,6 @@ import android.widget.TextView;
 
 public class PasswordGeneratorActivity extends AppCompatActivity {
 
-    private Button btnGenerate;
     private TextView tvResult;
     private EditText edtLength;
     private CheckBox cbLowerCase;
@@ -24,7 +23,7 @@ public class PasswordGeneratorActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_password_generator);
 
-        btnGenerate = findViewById(R.id.btnGenerate);
+        Button btnGenerate = findViewById(R.id.btnGenerate);
         tvResult = findViewById(R.id.tvResult);
         edtLength = findViewById(R.id.edt_length);
         cbLowerCase = findViewById(R.id.cb_lower_case);
@@ -52,7 +51,7 @@ public class PasswordGeneratorActivity extends AppCompatActivity {
             return;
         }
 
-        String result = "";
+        String result;
 
         PasswordGenerator.PasswordGeneratorBuilder builder = new PasswordGenerator.PasswordGeneratorBuilder();
         if(cbLowerCase.isChecked())
