@@ -74,25 +74,27 @@
             style="@style/Widget.AppCompat.Button.Borderless"/>
 
         <EditText
+            android:id="@+id/tvContent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_background"
+            android:gravity="top"
+            android:hint="Hãy chi sẻ những điều mà bạn thích về sản phẩm"
             android:inputType="textMultiLine"
             android:lines="10"
-            android:background="@drawable/edit_text_background"
-            android:layout_marginTop="10dp"
-            android:hint="Hãy chi sẻ những điều mà bạn thích về sản phẩm"
-            android:gravity="top"
-            android:padding="5dp"/>
+            android:padding="5dp" />
 
         <Button
+            android:id="@+id/btnSend"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:background="@drawable/button_colored_background"
             android:text="Gửi"
             android:textColor="@color/white"
-            android:textSize="20sp"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:background="@drawable/button_colored_background"/>
+            android:textSize="20sp" />
     </LinearLayout>
 
 </LinearLayout>
